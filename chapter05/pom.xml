@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring5adv</artifactId>
+        <groupId>org.sansovo.demo.spring5adv</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>chapter05</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>aop-hello-world</module>
+        <module>simple-before-advice</module>
+        <module>security</module>
+        <module>simple-after-returning-advice</module>
+        <module>after-returning-advice-keygen</module>
+        <module>simple-around-advice</module>
+        <module>simple-throws-advice</module>
+        <module>static-pointcut</module>
+        <module>dynamic-pointcut</module>
+        <module>simple-name-matching</module>
+        <module>regex-pointcuts</module>
+        <module>aspectj-regex-pointcuts</module>
+        <module>annotation-pointcut</module>
+        <module>cglib-performance</module>
+        <module>cflow-pointcuts</module>
+        <module>composable-pointcut</module>
+        <module>modification-introduction</module>
+        <module>proxyfactorybean</module>
+        <module>proxyfactorybean-introduction</module>
+        <module>aop-namespace</module>
+        <module>aspectj-annotations</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!-- Spring dependencies start: -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

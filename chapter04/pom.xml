@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring5adv</artifactId>
+        <groupId>org.sansovo.demo.spring5adv</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>chapter04</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>bean-init-method</module>
+        <module>initializing-bean</module>
+        <module>post-construct</module>
+        <module>disposable-bean</module>
+        <module>initializing-bean-destroy</module>
+        <module>post-construct-pre-destroy</module>
+        <module>bean-name-aware</module>
+        <module>application-context-aware</module>
+        <module>factory-bean</module>
+        <module>factory-bean-and-factory-method-attributes</module>
+        <module>property-editors</module>
+        <module>message-source</module>
+        <module>events</module>
+        <module>resource</module>
+        <module>java-config</module>
+        <module>java-config-message-provider</module>
+        <module>profiles</module>
+        <module>environment</module>
+        <module>property-placeholder</module>
+        <module>jsr330</module>
+        <module>groovy-config-java</module>
+        <module>groovy-config</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!-- Spring dependencies start: -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+        </dependency>
+    </dependencies>
+</project>
